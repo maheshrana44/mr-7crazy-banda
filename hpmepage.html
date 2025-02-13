@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mr7 crazy banda - Live Movie Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to mr7 crazy banda</h1>
+        <p>Watch movies live with strangers and chat with them!</p>
+    </header>
+
+    <!-- Google Login -->
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+    <!-- Movie Section -->
+    <div id="movie-section" style="display:none;">
+        <h2>Live Movie Watch</h2>
+        <video id="movie-video" controls autoplay>
+            <source src="movie.mp4" type="video/mp4">
+        </video>
+        <button onclick="startVoiceChat()">Start Voice Chat</button>
+        <div id="chat-container"></div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="javascript.js"></script>
+
+</body>
+</html>
